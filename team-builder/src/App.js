@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SignUpForm from './components/Form';
+// import TeamList from './components/TeamList';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// const Team = (props) =>
+//   [{
+//      name:" ",
+//     email:" ",
+//      role:" " 
+//   }]
+
+  function App (props) {
+    return (
+      <div className="main-container">
+        <table className="form-tbl">
+            <thead className="tbl-header">
+                <tbody clasName="tbl-body">
+                  <SignUpForm />
+                </tbody>
+            </thead>
+        </table>
+      </div>
+    )
+  }
+
 
 export default App;
